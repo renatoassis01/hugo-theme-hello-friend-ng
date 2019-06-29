@@ -2,7 +2,7 @@ function FullPic(sourceFile) {
 
     this.sourceFile = sourceFile.src;
     this.caption = sourceFile.alt;
-
+   
 }
 
 FullPic.prototype.open = function () {
@@ -78,11 +78,7 @@ const createLegend = (photo, n) => {
 
 function initLightbox() {
     var photos = Array.prototype.slice.call(document.querySelectorAll('.lightbox-photo'));
-
-    var n = 1;
     photos.forEach(function (photo) {
-        createLegend(photo, n)
-        n++;
         photo.addEventListener('click', function () {
 
             var currentPhoto = new FullPic(photo);
