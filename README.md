@@ -171,6 +171,7 @@ If you spot any bugs, please use [Issue Tracker](https://github.com/rhazdon/hugo
 
 ## Licence
 
+Copyright © 2019 Renato Assis
 Copyright © 2019 Djordje Atlialp
 
 The theme is released under the MIT License. Check the [original theme license](https://github.com/rhazdon/hugo-theme-hello-friend-ng/blob/master/LICENSE.md) for additional licensing information.
