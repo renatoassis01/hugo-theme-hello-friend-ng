@@ -1,10 +1,8 @@
-<nav class="menu">
+<nav>
     <ul class="menu__inner">
         {{- $currentPage := . -}}
         {{ range .Site.Menus.main -}}
         <li><a class="menu-links" href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
         {{- end }}
-
-
     </ul>
 </nav>
