@@ -54,3 +54,38 @@ div.caption-image {
     text-indent: 0;
 }
 
+figure {
+    border: 1px solid #282828;
+    cursor: pointer;
+    transition: transform .5s;
+    margin: 40px -50px;
+    width: 860px;
+    max-width: 860px;
+
+    @media #{$media-size-tablet} {
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
+  
+  figure:hover {
+    transform: translateY(-10px);
+  }
+  
+  figcaption {
+    padding: 5px;
+  }
+  
+  figure img {
+    width: 100%;
+  }
+
+.image-caption-cover {
+    margin: 0;
+    font-family: 'TIActuBetaMono-Regular_web', 'Consolas', 'Andale Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.27273;
+}
+ 

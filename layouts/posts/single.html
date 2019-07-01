@@ -31,18 +31,23 @@
         </aside>
         <hr />
         {{- end }}
-
-        {{ with .Params.Cover }}
-        <img src="/img/{{ . }}" class="post-cover" />
-        {{ end }}
+        <figure>
+            {{ with .Params.Cover }}
+            <img class="thumb lightbox-photo" src="{{ . }}" alt="{{ . }}">
+            {{ end }}
+            {{ with .Params.Caption }}
+            <figcaption class="image-caption-cover">
+                {{ . }}
+            </figcaption>
+            {{- end }}
+        </figure>
 
         <div class="post-content">
             {{ .Content }}
         </div>
     </article>
-
+    {{- partial "author.html" . }}
     <hr />
-
     <div class="post-info">
         {{- with .Params.tags }}
         <p>
@@ -90,6 +95,7 @@
             {{ if .Site.Params.dateformNum }}{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}{{ else }}{{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}{{ end }}
         </p>
         {{- end }}
+
     </div>
 
     {{ if or .NextInSection .PrevInSection }}
@@ -121,7 +127,7 @@
     </div>
     {{ end }}
 
-    {{ if .Site.Params.comments  }}
+    {{ if .Params.comments  }}
     <div id="comments" class="thin">
         {{- partial "comments.html" . -}}
     </div>

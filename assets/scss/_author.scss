@@ -1,0 +1,50 @@
+.profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    display: inline-block;
+    background: no-repeat center center;
+    background-size: cover;
+    margin-right: 2px;
+    margin-bottom: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+}
+
+.about-the-author,
+.description-author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+
+}
+
+.item {
+    width: 55px;
+    height: 55px;
+    margin: 0 5.5px;
+
+}
+
+.description-author p {
+  margin: 0; 
+  font-style: italic; 
+  color: darkgray
+}
+
+.description-author h4 {
+    margin: 0;
+    color:rgb(66, 66, 66)
+}
+
+.social-author {
+    margin: 0px;
+
+}
